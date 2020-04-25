@@ -1,0 +1,12 @@
+\\ Query to create table
+CREATE TABLE Suburb ( 
+id INT(5) NOT NULL AUTO_INCREMENT , 
+name VARCHAR(100) NOT NULL , 
+postcode INT(4) NOT NULL , 
+locality ENUM('Inner city','Northern','Eastern','Western') NOT NULL , PRIMARY KEY (id)) ENGINE = MyISAM;
+
+\\ Insert data
+INSERT INTO Suburbs (name, postcode, locality) VALUES ('Brunswick', 3056, 'Northern');
+INSERT INTO Suburbs (name, postcode, locality) VALUES ('Carlton', 3056, 'Inner city');
+INSERT INTO Suburbs (name, postcode, locality) VALUES ('Ashburton', 3147, 'Eastern');
+INSERT INTO Suburbs (name, postcode, locality) VALUES ('Albion', 3020, 'Western');
